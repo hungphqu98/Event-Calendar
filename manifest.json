@@ -1,0 +1,13 @@
+{
+    "name": "EventCalendar",
+    "description": "Calendar including event scheduler",
+    "version": "0.0.1",
+    "author": "HungQuang",
+    "browser_action": {
+        "default_popup": "calendar.html"
+      },
+    "permissions": [
+        "tabs"
+      ],
+    "manifest_version": 2
+}

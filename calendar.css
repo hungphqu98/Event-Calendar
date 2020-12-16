@@ -1,0 +1,154 @@
+*{
+    font-family: 'JetBrains Mono', monospace !important;
+    font-weight: 400;
+}
+body {
+    margin: 0;
+    width: 450px;
+    height: 450px;
+    background-color: #F3F3F3;
+}
+.date-picker {
+    text-align: center;
+}
+
+.date-picker #date-picker, .list-events-container {
+    display: inline-block;
+    width: 450px;
+    text-align: center;
+    height: 450px;
+}
+.list-events-container {
+    position: relative;
+    display: none;
+    overflow: hidden;
+}
+.date-picker #date-picker {
+    float: left;
+}
+
+.date-picker .ui-datepicker-calendar {
+    width: 100%;
+    height: 80%;
+}
+.ui-datepicker-header {
+    margin-top: 10px;
+}
+.date-picker .ui-datepicker-title, .ui-datepicker-prev, .ui-datepicker-next {
+    margin: 25px;
+    font-weight: bold;
+}
+.date-picker .ui-datepicker-prev, .ui-datepicker-next {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 50px;
+    border: 1px solid grey;
+}
+.date-picker .list-events {
+    text-align: left;
+}
+
+.date-picker .list-events div {
+    border-top: 2px solid #eeeeee;
+    margin: 5px;
+}
+
+.date-picker .event-name {
+    font-weight: bold;
+    font-size:16px;
+}
+
+.date-picker .event-description {
+    color: #747474;
+    font-size: 18px;
+}
+
+.date-picker .today-date, .selected-date {
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+.event-form {
+    width: 450px;
+    height: 450px;
+    display: none;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.info-text {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.event-form input, textarea {
+    width: 200px;
+    padding: 3px;
+    margin: 10px;
+}
+
+.event-form label {
+    text-align: left;
+    margin-right: 30px;
+    font-weight: bold;
+}
+.event-form div {
+    margin-top: 10px;
+}
+#add-event {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid grey;
+}
+.ui-datepicker-current {
+    position: absolute;
+    top: 0;
+    transform: translate(-30px,5px);
+    background: none;
+    padding: 5px 8px;
+    font-weight: bold;
+    border: 1px solid grey;
+    font-size: 15px;
+    cursor: pointer;
+}
+td {
+    text-align: center;
+}
+td a {
+    text-decoration: none;
+}
+#btnBack {
+    position: absolute;
+    cursor: pointer;
+    left: 150px;
+    bottom: 0;
+    padding: 5px 10px;
+    border: 1px solid grey;
+}
+#btnAdd {
+    position: absolute;
+    cursor: pointer;
+    left: 215px;
+    bottom: 0;
+    padding: 5px 10px;
+    border: 1px solid grey;
+}
+
+.event-description {
+    text-align: center;
+    padding: 10px;
+}
+.availabledate a {
+    background-color: none !important;
+    background-image :none !important;
+    color:red !important;
+}
+.ui-datepicker-today {
+    background-color: thistle;
+}
+.ui-datepicker-month, .ui-datepicker-year {
+    background-color: #F3F3F3;
+    border: none;
+}
